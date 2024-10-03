@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="..\styles\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Events</title>
+</head>
+
+<body>
+
+
+    <section class="header2">
+        <nav>
+            <a href="..\home.html"><img src="..\img/CUNE PNG Icon.png" width="200" height="100"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="\home.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="../clubs\clubs.html">CLUBS</a></li> <!-- Alyssa, I made a link to the clubs page -->
+                    <li><a href="../events\events.html">EVENTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box2">
+            <h1>Events</h1>
+        </div>
+
+
+
+
+        <!------JavaScript for Toggle Menu------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }        
+        </script>
+
+
+
+
+        <div>
+            <div class="container  d-flex justify-content-center">
+                <div class="row g-3">
+                    <div class="col">
+                        <a class="Event" href="pause_for_paws.html">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top"
+                                    src="https://scontent.flnk2-1.fna.fbcdn.net/v/t39.30808-6/402033716_1123684438780547_7535312554929142389_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=S6v28UJHUaUAX82HfkD&_nc_ht=scontent.flnk2-1.fna&oh=00_AfBJQG_TLYv6S41y6Piv4XfleiB_1rZoymuc8d1DxeaHyA&oe=657623AD"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pause For paws</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Friday 12/8</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col">
+                        <a href="#" class="Event">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top"
+                                    src="https://www.thespruceeats.com/thmb/brLnwrIH1nG3sNy4sFmfj8KItmU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gingerbread-house-recipe-6504301-hero-01-1e5f3298d27f473a91d622a6ae9725d9.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Make a Gingerbread House</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">3:30 pm J-Top</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="Event">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top"
+                                    src="https://insanelygoodrecipes.com/wp-content/uploads/2020/09/Homemade_Pancakes_With_Chocolate_Chips-800x530.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Brake For Breakfast</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Janzow, 8:30 - 10 pm</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="Event">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top"
+                                    src="https://ak.picdn.net/offset/photos/5fb7e90b6f52af4409e51911/medium/offset_1043479.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Event 4</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Time & Location</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            // Sample club data (clubs array)
+            const clubs = [
+                { name: "Computer & Technology", imgSrc: "../img/clubct.png", description: "Technology, Computer Science, IT" },
+                { name: "Social Science Club Test ", imgSrc: "../img/clubss.png", description: "Psychology, Sociology, BS, CJ" },
+                { name: "Law & Justice", imgSrc: "../img/clublj.png", description: "Criminal Justice" },
+                { name: "Education", imgSrc: "../img/clubeducation.png", description: "Education" },
+                { name: "SAC", imgSrc: "../img/clubeducation.png", description: "Student Body" }
+            ];
+
+            // Function to create a club card
+            function createClubCard(club) {
+                const card = document.createElement('div');
+                card.className = 'col';
+                card.innerHTML = `
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="${club.imgSrc}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">${club.name}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">${club.description}</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            `;
+                return card;
+            }
+
+            // Populate club cards
+            const clubContainer = document.getElementById('clubContainer');
+            clubs.forEach(club => {
+                const clubCard = createClubCard(club);
+                clubContainer.appendChild(clubCard);
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+
+
+        <!----JavaScript for Translate---->
+
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>University Club Hub Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="img/CUNE PNG Icon.png"
+                width="200"
+                height="100"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="clubs\clubs.html">CLUBS</a></li> <!-- Alyssa, I made a link to the clubs page -->
+                    <li><a href="events\events.html">EVENTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>University Club Hub</h1>
+        <p>Concordia University NE</p>
+        <a href="https://www.cune.edu/faith-and-life/student-life/clubs-and-intramurals"class="hero-btn">Visit us to know more</a> 
+    </div>
+
+
+    </section>
+
+    <!------ Clubs ------>
+
+    <section class="Clubs">
+
+        <h1>Clubs We Offer</h1>
+        <p>Click on a club to learn more!</p>
+
+        <div class="row">
+            <div class="club-col">
+                <a href="/clubs/ct_club.html" class="Quickclub">
+                    <h3>Business</h3>
+                </a>
+                <p>Business section</p>
+            </div>
+            <div class="club-col">
+                <a href="/clubs/ct_club.html" class="Quickclub">
+                    <h3>Computer Science</h3>
+                </a>
+                <p>Comptuer Science section</p>
+            </div>
+            <div class="club-col">
+                <a href="/clubs/ct_club.html" class="Quickclub">
+                    <h3>Social Science</h3>
+                </a>
+                <p>Social Science section</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!----- Campus ----->
+    <section class="campus">
+        <h1>Our Campus</h1>
+        <p1>The clubs will meet various areas on campus!</p1>
+
+        <div class="row">
+            <div class="campus-col">
+                <a href="dunklau.html">
+                    <img src="img/Dunklau.jpg">
+                    <div class="layer">
+                        <h3>DUNKLAU</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="campus-col">
+                <a href="jtop.html">
+                    <img src="img/Janzow.jpg">
+                    <div class="layer">
+                        <h3>JANZOW</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="campus-col">
+                <a href="library.html">
+                    <img src="img/Library.jpg">
+                    <div class="layer">
+                        <h3>Library</h3>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        
+        <div class="row">
+            <div class="campus-col">
+                <a href="david.html">
+                    <img src="img/DavidHall.jpg">
+                    <div class="layer">
+                        <h3>DAVID HALL</h3>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!----JavaScript for Translate---->
+
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }        
+    </script>
+
+    
+    <!-----Footer----->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Follow our socials!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p> Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    
+    </section>
+
+    
+
+
+</body>
+</html>

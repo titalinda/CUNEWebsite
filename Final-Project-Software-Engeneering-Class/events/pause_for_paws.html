@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="..\styles\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Pause for Paws</title>
+</head>
+
+<body>
+
+    <section class="header4">
+        <nav>
+            <a href="..\home.html"><img src="..\img/CUNE PNG Icon.png" width="200" height="100"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../home.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="../clubs\clubs.html">CLUBS</a></li> <!-- Alyssa, I made a link to the clubs page -->
+                    <li><a href="../events\events.html">EVENTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box4 my-5">
+            <h1>Pause for Paws</h1>
+        </div>
+
+
+        <!------JavaScript for Toggle Menu------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }        
+        </script>
+
+
+        <a href="https://www.instagram.com/p/CpvmyqOpIE_/?hl=en">
+            <img align="right" src="..\img/Pauseforpaws.png" alt="Dogs"
+                style="width: 600px;height:500px;padding: 1% 2%;">
+        </a>
+        <p style="text-align:right;">Click on the image to go to our instagram!</p>
+
+
+        <div class="container event-info">
+            <div class="item-container">
+
+                <div>
+                    <h3 style="text-align:left;font-size:40px;">
+                        <i class="far fa-calendar-alt"></i>
+                        Friday 12/8
+                    </h3>
+                </div>
+
+                <div>
+                    <h3 style="text-align:left;font-size:40px;">
+                        <i class="fa-solid fa-clock my-5"></i>
+                        12:00PM-1:30PM
+                    </h3>
+                </div>
+
+                <div class="additional-info">
+                    <h3 style="text-align:left;font-size:40px;" class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Janzow, Cattle Conference Room
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col">
+                    <!-- <img src="..\img\clubCT.png" alt="club logo" > -->
+                    <h2 style="text-align:left;font-size:40px;">Event Description</h2>
+                    <p style="text-align:left;font-size:20px;">Come pet a dog and de-stress! Certified therapy dog teams
+                        visit Love Library and the Dinsdale
+                        Family Learning Commons monthly in this program for students, faculty, and staff. Big Red
+                        Pawp-Ups are organized by Big Red Resilience and Well-being, Department of Entomology, and
+                        University Libraries in compliance with the University Policy on the Use of Animals. A
+                        special thank you to our community partners and local therapy dog teams: Domesti-PUPS
+                        Healing Heart Therapy Dogs Uplifting Paws</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+
+        <!----JavaScript for Translate---->
+
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
